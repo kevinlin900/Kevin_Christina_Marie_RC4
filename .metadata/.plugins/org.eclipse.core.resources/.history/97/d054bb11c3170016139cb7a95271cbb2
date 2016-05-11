@@ -1,5 +1,5 @@
 
-public class encrypt implements RC4interface {
+public class keyschedule implements RC4interface {
 	public void SInitialize() {
 
 	}

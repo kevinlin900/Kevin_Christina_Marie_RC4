@@ -1,4 +1,4 @@
 
-public class keyschedule implements RC4interface {
+public class keyschedule {
 
 }

@@ -1,5 +1,5 @@
 
-public class encrypt implements RC4interface {
+public interface RC4interface {
 	public void SInitialize() {
 
 	}
