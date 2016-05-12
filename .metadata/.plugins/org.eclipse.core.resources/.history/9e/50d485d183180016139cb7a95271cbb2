@@ -22,8 +22,8 @@ public class encrypt implements RC4interface {
 	public void PRGA() {
 		int i = 0;
 		int j = 0;
-		while (S[i] != 0) {
-
+		while(S[i] != 0){
+			
 		}
 	}
 

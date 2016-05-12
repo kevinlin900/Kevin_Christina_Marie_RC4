@@ -16,7 +16,7 @@ public class keyschedule {
 
 	}
 
-	public static String getResult() {
+	public String getResult() {
 		System.out.println("Enter key: ");
 		Scanner in = new Scanner(System.in);
 		String password = in.nextLine();

@@ -16,17 +16,6 @@ public class keyschedule {
 
 	}
 
-	public static String getResult() {
-		System.out.println("Enter key: ");
-		Scanner in = new Scanner(System.in);
-		String password = in.nextLine();
-
-		char[] split = new char[password.length()];
-		split = password.toCharArray();
-		toBinary(split);
-		return result;
-	}
-
 	public static void toBinary(char[] something) {
 		for (char part : something) {
 			if (part == 'A') {
