@@ -207,98 +207,100 @@ public class keyschedule {
 				result += "00111001";
 			}
 
+			
+			
 			if (part == ' ') {
 				result += "00100000";
 			}
 			if (part == '!') {
-				result += "00100001";
+				result += "00100000";
 			}
 			if (part == '"') {
-				result += "00100010";
+				result += "00100000";
 			}
 			if (part == '#') {
-				result += "00100011";
-			}
-			if (part == '$') {
-				result += "00100100";
+				result += "00100000";
 			}
 			if (part == '%') {
-				result += "00100101";
+				result += "00100000";
 			}
 			if (part == '&') {
-				result += "00100110";
+				result += "00100000";
 			}
 			if (part == '(') {
-				result += "00101000";
+				result += "00100000";
 			}
 			if (part == ')') {
-				result += "00101001";
+				result += "00100000";
 			}
 			if (part == '*') {
-				result += "00101010";
+				result += "00100000";
 			}
 			if (part == '+') {
-				result += "00101011";
+				result += "00100000";
 			}
 			if (part == ',') {
-				result += "00101100";
+				result += "00100000";
 			}
 			if (part == '-') {
-				result += "00101101";
+				result += "00100000";
 			}
 			if (part == '.') {
-				result += "00101110";
+				result += "00100000";
 			}
 			if (part == '/') {
-				result += "00101111";
+				result += "00100000";
 			}
 			if (part == ':') {
-				result += "00111010";
+				result += "00100000";
 			}
 			if (part == ';') {
-				result += "00111011";
+				result += "00100000";
 			}
 			if (part == '<') {
-				result += "00111100";
+				result += "00100000";
 			}
 			if (part == '=') {
-				result += "00111101";
+				result += "00100000";
 			}
 			if (part == '>') {
-				result += "00111110";
+				result += "00100000";
 			}
 			if (part == '?') {
-				result += "00111111";
+				result += "00100000";
 			}
 			if (part == '@') {
-				result += "01000000";
+				result += "00100000";
 			}
 			if (part == '[') {
-				result += "01011011";
+				result += "00100000";
 			}
 			if (part == ']') {
-				result += "01011101";
+				result += "00100000";
 			}
 			if (part == '^') {
-				result += "01011110";
+				result += "00100000";
 			}
 			if (part == '_') {
-				result += "01011111";
+				result += "00100000";
 			}
 			if (part == '`') {
-				result += "01100000";
+				result += "00100000";
+			}
+			if (part == ')') {
+				result += "00100000";
 			}
 			if (part == '{') {
-				result += "01111011";
+				result += "00100000";
 			}
 			if (part == '|') {
-				result += "01111100";
+				result += "00100000";
 			}
 			if (part == '}') {
-				result += "01111101";
+				result += "00100000";
 			}
 			if (part == '~') {
-				result += "01111110";
+				result += "00100000";
 			}
 		}
 	}

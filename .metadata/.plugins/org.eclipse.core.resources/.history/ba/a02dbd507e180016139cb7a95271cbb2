@@ -210,95 +210,26 @@ public class keyschedule {
 			if (part == ' ') {
 				result += "00100000";
 			}
-			if (part == '!') {
-				result += "00100001";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '"') {
-				result += "00100010";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '#') {
-				result += "00100011";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '$') {
-				result += "00100100";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '%') {
-				result += "00100101";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '&') {
-				result += "00100110";
+			if (part == ' ') {
+				result += "00100000";
 			}
-			if (part == '(') {
-				result += "00101000";
-			}
-			if (part == ')') {
-				result += "00101001";
-			}
-			if (part == '*') {
-				result += "00101010";
-			}
-			if (part == '+') {
-				result += "00101011";
-			}
-			if (part == ',') {
-				result += "00101100";
-			}
-			if (part == '-') {
-				result += "00101101";
-			}
-			if (part == '.') {
-				result += "00101110";
-			}
-			if (part == '/') {
-				result += "00101111";
-			}
-			if (part == ':') {
-				result += "00111010";
-			}
-			if (part == ';') {
-				result += "00111011";
-			}
-			if (part == '<') {
-				result += "00111100";
-			}
-			if (part == '=') {
-				result += "00111101";
-			}
-			if (part == '>') {
-				result += "00111110";
-			}
-			if (part == '?') {
-				result += "00111111";
-			}
-			if (part == '@') {
-				result += "01000000";
-			}
-			if (part == '[') {
-				result += "01011011";
-			}
-			if (part == ']') {
-				result += "01011101";
-			}
-			if (part == '^') {
-				result += "01011110";
-			}
-			if (part == '_') {
-				result += "01011111";
-			}
-			if (part == '`') {
-				result += "01100000";
-			}
-			if (part == '{') {
-				result += "01111011";
-			}
-			if (part == '|') {
-				result += "01111100";
-			}
-			if (part == '}') {
-				result += "01111101";
-			}
-			if (part == '~') {
-				result += "01111110";
+			if (part == ' ') {
+				result += "00100000";
 			}
 		}
 	}
