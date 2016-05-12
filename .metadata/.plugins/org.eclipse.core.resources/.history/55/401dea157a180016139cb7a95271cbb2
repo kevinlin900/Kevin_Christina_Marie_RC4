@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class keyschedule {
+	
+	String result = "";
+	
+	public static void main(String[] args) {
+		System.out.println("Enter key: ");
+		Scanner in = new Scanner(System.in);
+		String password = in.nextLine();
+		
+		char[] split = new char[password.length()];
+		split = password.toCharArray();
+		
+
+	}
+	
+	public String toBinary(char[] something){
+for(char part : split){
+			
+		}
+		return result;
+	}
+}

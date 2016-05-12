@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class keyschedule {
+	public static void main(String[] args)
+	{	
+		System.out.println("Enter key: ");
+		Scanner in = new Scanner (System.in);
+		String password = in.nextLine();
+		
+		
+	}
+}

@@ -96,7 +96,9 @@ public class keyschedule {
 			if (part == 'Z') {
 				result += "01011010";
 			}
-
+			
+			
+			
 			if (part == 'a') {
 				result += "01100001";
 			}
@@ -175,7 +177,9 @@ public class keyschedule {
 			if (part == 'z') {
 				result += "01111010";
 			}
-
+			
+			
+			
 			if (part == '0') {
 				result += "00110000";
 			}
