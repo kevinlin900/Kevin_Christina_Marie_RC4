@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class encrypt { // implements RC4interface {
-	private static int[] S = new int[256];
+	int[] S = new int[256];
 	private static String result = "";
 	private static String key = "";
 
@@ -32,12 +32,13 @@ public class encrypt { // implements RC4interface {
 	public void KSA() {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
+			System.out.print(key);
 			j = (j + S[i] + result.charAt(i % result.length())) % 256;
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;
 		}
-		System.out.print(Arrays.toString(S));
+		Arrays.toString(S);
 	}
 
 	public void PRGA() {

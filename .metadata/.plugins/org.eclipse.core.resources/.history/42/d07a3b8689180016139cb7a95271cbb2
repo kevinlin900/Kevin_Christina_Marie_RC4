@@ -1,4 +1,3 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class encrypt { // implements RC4interface {
@@ -37,7 +36,7 @@ public class encrypt { // implements RC4interface {
 			S[i] = j;
 			S[j] = temp;
 		}
-		System.out.print(Arrays.toString(S));
+		System.out.print(S);
 	}
 
 	public void PRGA() {

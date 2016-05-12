@@ -37,7 +37,7 @@ public class encrypt { // implements RC4interface {
 			S[i] = j;
 			S[j] = temp;
 		}
-		System.out.print(Arrays.toString(S));
+		Arrays.toString(S);
 	}
 
 	public void PRGA() {
