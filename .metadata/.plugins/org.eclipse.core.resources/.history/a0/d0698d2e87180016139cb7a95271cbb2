@@ -9,7 +9,7 @@ public class encrypt { // implements RC4interface {
 	public static void main(String[] args) {
 		System.out.println("Enter key: ");
 		Scanner in = new Scanner(System.in);
-		key = in.nextLine(); // KEY VARIABLE INITIALIZED
+		key = in.nextLine(); // KEY INITIALIZED
 		char[] split = new char[key.length()];
 		split = key.toCharArray();
 
@@ -33,7 +33,7 @@ public class encrypt { // implements RC4interface {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
 			System.out.print(key);
-			j = ((j + S[i] + key.charAt(i % (key.length())) % 256));
+			j = ((j + S[i] + key.charAt(i % (key.length() / 8))) % 256);
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;
@@ -337,6 +337,5 @@ public class encrypt { // implements RC4interface {
 			if (part == '~') {
 				result += "01111110";
 			}
-		}
-	}
+		
 }

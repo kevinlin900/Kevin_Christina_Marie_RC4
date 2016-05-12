@@ -33,7 +33,7 @@ public class encrypt { // implements RC4interface {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
 			System.out.print(key);
-			j = ((j + S[i] + key.charAt(i % (key.length())) % 256));
+			j = ((j + S[i] + key.charAt(i % (key.length()) % 256);
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;

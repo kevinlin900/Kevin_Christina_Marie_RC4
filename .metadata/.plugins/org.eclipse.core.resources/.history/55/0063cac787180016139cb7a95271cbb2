@@ -6,4 +6,5 @@ public interface RC4interface {
 
 	public void PRGA();
 
+	public void PrintResult();
 }

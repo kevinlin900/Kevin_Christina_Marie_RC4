@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class encrypt { // implements RC4interface {
+	static int[] S = new int[256];
+	private static String result = "";
+
+	public static void main(String[] args) {
+		System.out.println("Enter key: ");
+		Scanner in = new Scanner(System.in);
+		String password = in.nextLine();
+
+		char[] split = new char[password.length()];
+		split = password.toCharArray();
+		keyschedule.toBinary(split); // where keyschedule is used
+		System.out.println(result);
+
+		SInitialize();
+	}
+
+	public static String getResult() {
+		return result;
+	}
+
+	public static void SInitialize() {
+		for (int i = 0; i < 256; i++) {
+			S[i] = i;
+		}
+	}
+
+	public void KSA() {
+		String start = encrypt.getResult();
+		int j = 0;
+		for (int i = 0; i < 256; i++) {
+			j = ((j + S[i] + start.charAt(i % (start.length() / 8))) % 256);
+			int temp = S[i];
+			S[i] = j;
+			S[j] = temp;
+		}
+	}
+
+	public void PRGA() {
+		int i = 0;
+		int j = 0;
+		while (S[i] != 0) {
+
+		}
+	}
+
+	public void PrintResult() {
+
+	}
+}
