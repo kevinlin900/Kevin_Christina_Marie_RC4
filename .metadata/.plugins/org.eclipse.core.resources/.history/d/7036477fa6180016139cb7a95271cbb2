@@ -34,13 +34,13 @@ public class encrypt { // implements RC4interface {
 	public void KSA() {
 		for (int i = 0; i < 256; i++) {
 			S[i] = i;
-			K[i] = (int) (key.charAt(i % key.length()));
+			K[i] = (int) (key.charAt(binary.charAt(i % key.length())));
 		}
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
 			j = (j + S[i] + K[i]) % 256;
 			int temp = S[i];
-			S[i] = S[j];
+			S[i] = j;
 			S[j] = temp;
 		}
 		System.out.print(Arrays.toString(S));

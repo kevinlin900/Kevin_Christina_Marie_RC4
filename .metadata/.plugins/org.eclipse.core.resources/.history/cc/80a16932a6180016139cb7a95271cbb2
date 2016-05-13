@@ -40,7 +40,7 @@ public class encrypt { // implements RC4interface {
 		for (int i = 0; i < 256; i++) {
 			j = (j + S[i] + K[i]) % 256;
 			int temp = S[i];
-			S[i] = S[j];
+			S[i] = j;
 			S[j] = temp;
 		}
 		System.out.print(Arrays.toString(S));
