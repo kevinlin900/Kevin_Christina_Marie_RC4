@@ -18,7 +18,6 @@ public class encrypt { // implements RC4interface {
 		encrypt two = new encrypt();
 		two.toBinary(split); // result is now in binary code!!!
 		System.out.println(binary);
-		System.out.println(binary.length() + "-bit");
 
 		// two.SInitialize();
 		two.KSA();
