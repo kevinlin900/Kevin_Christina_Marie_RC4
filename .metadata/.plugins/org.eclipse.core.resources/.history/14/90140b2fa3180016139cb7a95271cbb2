@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class encrypt { // implements RC4interface {
 	private static int[] S = new int[256];
-	private static int[] K = new int[256];
 	private static String binary = "";
 	private static String key = "";
 	private static int ASCIIvalue = 0;
@@ -19,26 +18,22 @@ public class encrypt { // implements RC4interface {
 		two.toBinary(split); // result is now in binary code!!!
 		System.out.println(binary);
 
-		// two.SInitialize();
+		two.SInitialize();
 		two.KSA();
 		// two.PRGA();
 
 	}
 
-	// public void SInitialize() {
-	// for (int i = 0; i < 256; i++) {
-	// S[i] = i;
-	// }
-	// }
-
-	public void KSA() {
+	public void SInitialize() {
 		for (int i = 0; i < 256; i++) {
 			S[i] = i;
-			K[i] = (int) (key.charAt(i % key.length()));
 		}
+	}
+
+	public void KSA() {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
-			j = (j + S[i] + K[i]) % 256;
+			j = (j + S[i] + binary.charAt(i % key.length())) % 256;
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;

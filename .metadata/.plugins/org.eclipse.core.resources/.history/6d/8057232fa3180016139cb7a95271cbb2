@@ -19,22 +19,22 @@ public class encrypt { // implements RC4interface {
 		two.toBinary(split); // result is now in binary code!!!
 		System.out.println(binary);
 
-		// two.SInitialize();
+		//two.SInitialize();
 		two.KSA();
 		// two.PRGA();
 
 	}
 
-	// public void SInitialize() {
-	// for (int i = 0; i < 256; i++) {
-	// S[i] = i;
-	// }
-	// }
+//	public void SInitialize() {
+//		for (int i = 0; i < 256; i++) {
+//			S[i] = i;
+//		}
+//	}
 
 	public void KSA() {
-		for (int i = 0; i < 256; i++) {
+		for(int i = 0; i <256; i++){
 			S[i] = i;
-			K[i] = (int) (key.charAt(i % key.length()));
+			K[i] = (int)(key.charAt(i%binary.length()));
 		}
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
