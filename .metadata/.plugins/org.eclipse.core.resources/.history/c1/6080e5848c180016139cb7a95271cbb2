@@ -5,7 +5,6 @@ public class encrypt { // implements RC4interface {
 	private static int[] S = new int[256];
 	private static String binary = "";
 	private static String key = "";
-	private static int ASCIIvalue = 0;
 
 	public static void main(String[] args) {
 		System.out.println("Enter key: ");
@@ -33,7 +32,7 @@ public class encrypt { // implements RC4interface {
 	public void KSA() {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
-			j = (j + S[i] + binary.charAt(i % key.length())) % 256;
+			j = (j + S[i] + (toASCII(key.charAt((i + 1) % binary.length())))) % 256;
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;
@@ -333,6 +332,291 @@ public class encrypt { // implements RC4interface {
 			if (part == '~') {
 				binary += "01111110";
 			}
+		}
+	}
+
+	public void toASCII(char something) {
+		if (something == 'A') {
+			binary += "01000001";
+		}
+		if (something == 'B') {
+			binary += "01000010";
+		}
+		if (something == 'C') {
+			binary += "01000011";
+		}
+		if (something == 'D') {
+			binary += "01000100";
+		}
+		if (something == 'E') {
+			binary += "01000101";
+		}
+		if (something == 'F') {
+			binary += "01000110";
+		}
+		if (something == 'G') {
+			binary += "01000111";
+		}
+		if (something == 'H') {
+			binary += "01001000";
+		}
+		if (something == 'I') {
+			binary += "01001001";
+		}
+		if (something == 'J') {
+			binary += "01001010";
+		}
+		if (something == 'K') {
+			binary += "01001011";
+		}
+		if (something == 'L') {
+			binary += "01001100";
+		}
+		if (something == 'M') {
+			binary += "01001101";
+		}
+		if (something == 'N') {
+			binary += "01001110";
+		}
+		if (something == 'O') {
+			binary += "01001111";
+		}
+		if (something == 'P') {
+			binary += "01010000";
+		}
+		if (something == 'Q') {
+			binary += "01010001";
+		}
+		if (something == 'R') {
+			binary += "01010010";
+		}
+		if (something == 'S') {
+			binary += "01010011";
+		}
+		if (something == 'T') {
+			binary += "01010100";
+		}
+		if (something == 'U') {
+			binary += "01010101";
+		}
+		if (something == 'V') {
+			binary += "01010110";
+		}
+		if (something == 'W') {
+			binary += "01010111";
+		}
+		if (something == 'X') {
+			binary += "01011000";
+		}
+		if (something == 'Y') {
+			binary += "01011001";
+		}
+		if (something == 'Z') {
+			binary += "01011010";
+		}
+
+		if (something == 'a') {
+			binary += "01100001";
+		}
+		if (something == 'b') {
+			binary += "01100010";
+		}
+		if (something == 'c') {
+			binary += "01100011";
+		}
+		if (something == 'd') {
+			binary += "01100100";
+		}
+		if (something == 'e') {
+			binary += "01100101";
+		}
+		if (something == 'f') {
+			binary += "01100110";
+		}
+		if (something == 'g') {
+			binary += "01100111";
+		}
+		if (something == 'h') {
+			binary += "01101000";
+		}
+		if (something == 'i') {
+			binary += "01101001";
+		}
+		if (something == 'j') {
+			binary += "01101010";
+		}
+		if (something == 'k') {
+			binary += "01101011";
+		}
+		if (something == 'l') {
+			binary += "01101100";
+		}
+		if (something == 'm') {
+			binary += "01101101";
+		}
+		if (something == 'n') {
+			binary += "01101110";
+		}
+		if (something == 'o') {
+			binary += "01101111";
+		}
+		if (something == 'p') {
+			binary += "01110000";
+		}
+		if (something == 'q') {
+			binary += "01110001";
+		}
+		if (something == 'r') {
+			binary += "01110010";
+		}
+		if (something == 's') {
+			binary += "01110011";
+		}
+		if (something == 't') {
+			binary += "01110100";
+		}
+		if (something == 'u') {
+			binary += "01110101";
+		}
+		if (something == 'v') {
+			binary += "01110110";
+		}
+		if (something == 'w') {
+			binary += "01110111";
+		}
+		if (something == 'x') {
+			binary += "01111000";
+		}
+		if (something == 'y') {
+			binary += "01111001";
+		}
+		if (something == 'z') {
+			binary += "01111010";
+		}
+
+		if (something == '0') {
+			binary += "00110000";
+		}
+		if (something == '1') {
+			binary += "00110001";
+		}
+		if (something == '2') {
+			binary += "00110010";
+		}
+		if (something == '3') {
+			binary += "00110011";
+		}
+		if (something == '4') {
+			binary += "00110100";
+		}
+		if (something == '5') {
+			binary += "00110101";
+		}
+		if (something == '6') {
+			binary += "00110110";
+		}
+		if (something == '7') {
+			binary += "00110111";
+		}
+		if (something == '8') {
+			binary += "00111000";
+		}
+		if (something == '9') {
+			binary += "00111001";
+		}
+
+		if (something == ' ') {
+			binary += "00100000";
+		}
+		if (something == '!') {
+			binary += "00100001";
+		}
+		if (something == '"') {
+			binary += "00100010";
+		}
+		if (something == '#') {
+			binary += "00100011";
+		}
+		if (something == '$') {
+			binary += "00100100";
+		}
+		if (something == '%') {
+			binary += "00100101";
+		}
+		if (something == '&') {
+			binary += "00100110";
+		}
+		if (something == '(') {
+			binary += "00101000";
+		}
+		if (something == ')') {
+			binary += "00101001";
+		}
+		if (something == '*') {
+			binary += "00101010";
+		}
+		if (something == '+') {
+			binary += "00101011";
+		}
+		if (something == ',') {
+			binary += "00101100";
+		}
+		if (something == '-') {
+			binary += "00101101";
+		}
+		if (something == '.') {
+			binary += "00101110";
+		}
+		if (something == '/') {
+			binary += "00101111";
+		}
+		if (something == ':') {
+			binary += "00111010";
+		}
+		if (something == ';') {
+			binary += "00111011";
+		}
+		if (something == '<') {
+			binary += "00111100";
+		}
+		if (something == '=') {
+			binary += "00111101";
+		}
+		if (something == '>') {
+			binary += "00111110";
+		}
+		if (something == '?') {
+			binary += "00111111";
+		}
+		if (something == '@') {
+			binary += "01000000";
+		}
+		if (something == '[') {
+			binary += "01011011";
+		}
+		if (something == ']') {
+			binary += "01011101";
+		}
+		if (something == '^') {
+			binary += "01011110";
+		}
+		if (something == '_') {
+			binary += "01011111";
+		}
+		if (something == '`') {
+			binary += "01100000";
+		}
+		if (something == '{') {
+			binary += "01111011";
+		}
+		if (something == '|') {
+			binary += "01111100";
+		}
+		if (something == '}') {
+			binary += "01111101";
+		}
+		if (something == '~') {
+			binary += "01111110";
 		}
 	}
 

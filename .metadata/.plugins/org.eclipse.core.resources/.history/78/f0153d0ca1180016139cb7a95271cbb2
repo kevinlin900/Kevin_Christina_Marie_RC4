@@ -33,7 +33,7 @@ public class encrypt { // implements RC4interface {
 	public void KSA() {
 		int j = 0;
 		for (int i = 0; i < 256; i++) {
-			j = (j + S[i] + binary.charAt(i % key.length())) % 256;
+			j = (j + S[i] + binary.charAt(i % 1)) % 256;
 			int temp = S[i];
 			S[i] = j;
 			S[j] = temp;
