@@ -78,9 +78,8 @@ public class encrypt { // implements RC4interface {
 
 			int unicode = (int)plaintext.charAt(i-1);
 			//bitwise AND w/ nextint & unicode1
-			int bitwiseOR = unicode|k; 
-			int bitwiseAND = unicode&k;
-			int bitwise = bitwiseOR - bitwiseAND;
+		
+			int bitwise = unicode^k;
 	
 			//test
 			System.out.println("\n" + "nextint " + k);
