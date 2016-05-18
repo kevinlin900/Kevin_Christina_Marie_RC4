@@ -1,6 +1,5 @@
 
 public interface RC4interface {
-	public void SInitialize();
 
 	public void KSA();
 
